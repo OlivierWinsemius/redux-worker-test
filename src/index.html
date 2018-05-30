@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+        html, body, #root {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .rst__row.longest .rst__rowContents{
+            background-color: #82cfff;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div id="root"></div>

@@ -15,6 +15,20 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.worker\.js$/,
+                use: { loader: 'worker-loader' },
+            },
+            {
+                test: /\.scss$|\.css$/,
+                use: [
+                    {
+                        loader: 'style-loader',
+                    }, {
+                        loader: 'css-loader',
+                    },
+                ],
+            },
+            {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {

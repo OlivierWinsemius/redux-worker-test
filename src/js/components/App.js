@@ -1,5 +1,14 @@
 import React from 'react';
+import Blockchain from './ecosystems/Blockchain';
+import Spinner from './atoms/Spinner';
+import JSSpinner from './atoms/JSSpinner';
 
-const App = () => <h1>Hello World!</h1>;
+const App = () => (
+    <React.Fragment>
+        <Blockchain />
+        <Spinner />
+        <JSSpinner />
+    </React.Fragment>
+);
 
 export default App;

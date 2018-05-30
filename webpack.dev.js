@@ -13,7 +13,7 @@ module.exports = merge(common, {
     devtool: 'eval-source-map',
 
     devServer: {
-        hot: true,
+        // hot: true,
         contentBase: path.resolve(__dirname, 'dist', 'dev'),
         watchContentBase: true,
         host: '0.0.0.0',
@@ -22,7 +22,7 @@ module.exports = merge(common, {
 
     plugins: [
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
+        // new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin([path.resolve(__dirname, 'dist', 'dev')]),
         new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('development') }),
     ],

@@ -1,0 +1,3 @@
+export default {
+    BLOCKCHAIN_ADD_BLOCK: 'BLOCKCHAIN_ADD_BLOCK',
+};
